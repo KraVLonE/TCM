@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
+</head>
+
+<body onload="trafficLight()">
+  <div class="main container">
+      <div class="main1">
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      </div>
+   </div>
+   <div class="main">   
+      <div class="main2">    
+      <div class="light"></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      </div>
+      <div class="main">
+      <div class="main3">     
+            <div class="light"></div>
+            <div class="light"></div>
+            <div class="light"></div>
+      </div> 
+    </div>
+    <div class="main">
+      <div class="main4">
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+    </div>
+  </div>
+  </div>
+      <div class="box1">
+        <h4>Avg Flow Per Time</h4>
+        <canvas id="graph-area" width="200" height="100"
+style="border:1px solid #000000;">
+</canvas> 
+      </div>   
+      <div class="box2">
+        <h4>Density Per Time</h4>
+      </div>  
+      <div class="table">
+        <table>
+            <h3>Flow</h3>
+            <h3>Density</h3>
+            <h3>Volume</h3>
+            <h3>Pressure</h3>
+        </table>
+      </div>
+      <!-- <py-config>
+      packages = ["matplotlib"]
+      </py-config>
+      <py-script>
+        import matplotlib.pyplot as plt
+        import random
+        
+        # Initialize empty lists to store x and y values
+        x_values = []
+        y_values = []
+        
+        # Define function to generate random data points
+        def generate_data():
+            x = random.randint(1, 10)
+            y = random.randint(1, 10)
+            return x, y
+        
+        # Define function to update the plot with new data
+        def update_plot():
+            # Generate new data point
+            x, y = generate_data()
+            x_values.append(x)
+            y_values.append(y)
+            # Clear previous plot and plot new data
+            plt.plot(x_values, y_values)
+            plt.xlabel('X-axis')
+            plt.ylabel('Y-axis')
+            plt.title('Real-time Scatter Plot')
+            # Pause for a short time before updating the plot
+            fig = plt.show()
+            display(fig, target="graph-area", append=False)
+        
+        # Continuously update the plot
+        update_plot()
+
+      </py-script> -->
+
+</body>
+</html>
